@@ -1,0 +1,103 @@
+body{
+    background-image: url(assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    font-family: "Barlow Condensed", sans-serif;
+    position: fixed;
+    width: 100%;
+    padding: 40px 0 40px 40px;
+}
+nav{
+    background-color: #ffffff0d;
+    backdrop-filter: blur(20px);
+    padding-left: 120px;
+    padding-right: 64px;
+    left: 0%;
+}
+nav ul{
+    gap: 48px;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+nav li{
+    cursor: pointer;
+}
+nav li:active{
+    border-bottom: 3px solid #ffffff;
+}
+nav li:hover{
+    border-bottom: 3px solid #ffffff7c;
+}
+div hr {
+    height: 2px;
+    width: 500px;
+    background-color: #ffffff0d;
+}
+main{
+    height: calc(100vh - 96px);
+    padding: 128px;
+    display: flex;
+    align-items: flex-end !important;
+}
+p{
+    font-family: "Barlow Regular", sans-serif;
+    font-size: 18px !important;
+    color: #D0D6F9;
+}
+h1{
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 144px !important;
+    padding: 0;
+    margin: 0;
+}
+h6{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px !important;
+    color: #D0D6F9;
+    letter-spacing: 4px;
+    line-height: normal;
+}
+.explore-wrapper{
+    position: relative;
+    width: 252px;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.explore-wrapper::before{
+    content: '';
+    position: absolute;
+    width: 252px;
+    height: 252px;
+    background-color: #ffffff38;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.explore-wrapper:hover::before{
+    width: 400px;
+    height: 400px;
+}
+
+.explore{
+    position: relative; /* sits on top of the ::before */
+    width: 252px;
+    height: 252px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
