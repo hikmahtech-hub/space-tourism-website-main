@@ -3,35 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Hikmah Maruf | Space tourism website</title>
 </head>
-<body>
+<body class="destination">
+  <header class="flex justify-between">
+    <div class="flex items-center">
+      <img src="assets/shared/logo.svg" class="shrink-0" alt="space tourism logo ">
+      <div>
+        <hr>
+      </div>
+    </div>
+    <nav class="flex justify-center items-center">
+      <ul class="text-white flex justify-between">
+        <li class="py-8"><a href="index.html"><strong>00</strong> HOME</a></li>
+        <li class="py-8 active-page"><a href="destination-moon.html"><strong>01</strong> DESTINATION</a></li>
+        <li class="py-8"><a href="crew-commander.html"><strong>00</strong> CREW</a></li>
+        <li class="py-8"><a href="technology.html"><strong>00</strong> TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex flex-col mx-8">
+    <section class="container mx-auto">
+      <h6 class="pick uppercase"><span class="opacity-50">01</span> Pick your destination</h6>
+    </section>
+    <section class="grid grid-cols-2 justify-center items-center w-full">
+      <section class="flex flex-col">
+        <div>
+           <img src="assets/destination/image-moon.png" alt="moon image">
+        </div>
+      </section>
+      <section class="destination-all-info flex flex-col">
+        <nav class="destination-nav flex justify-start items-center">
+          <ul class="flex justify-start">
+            <li class="py-2 active-page"><a href="destination-moon.html"><strong>MOON</strong></a></li>
+            <li class="py-2"><a href="destination-mars.html"><strong>MARS</strong></a></li>
+            <li class="py-2"><a href="destination-europa.html"><strong>EUROPA</strong></a></li>
+            <li class="py-2"><a href="destination-titan.html"><strong>TITAN</strong></a></li>
+          </ul>
+        </nav>
+      <div class="destination-info">
+        <h2 class="uppercase text-white">Moon</h2>
+        <p class="p-0 m-0">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.</p>
+      </div>
+      <hr class="destination-divider opacity-40">
+        <div class="destination-meta flex justify-start justify-between items-center">
+          <div class="distance">
+            <p class="uppercase">Avg. distance</p>
+            <h5 class="uppercase text-white">384,400 km</h5>
+          </div>
+          <div class="travel-time ml-8">
+            <p class="uppercase">Est. travel time</p>
+            <h5 class="uppercase text-white">3 days</h5>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Moon
-
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
-
-  Avg. distance
-  384,400 km
-
-  Est. travel time
-  3 days
 </body>
 </html>

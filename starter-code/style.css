@@ -1,5 +1,10 @@
-body{
+body.home{
     background-image: url(assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.destination{
+    background-image: url(assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -96,8 +101,67 @@ h6{
     border-radius: 50%;
     font-family: "Bellefair", serif;
     font-size: 32px;
+    color: #0b0d17;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+}
+.explore:hover{
+    color: #0b0d1756;
+}
+.pick{
+    margin-bottom: 24px !important;
+    margin-top: 48px !important;
+}
+h6.pick{
+    letter-spacing: 4px;
+    color: #ffffff;
+}
+.destination-nav{
+    background: none;
+    width: 445px;
+    height: 2px;
+    left: 0%;
+    padding-left: 0px;
+}
+.destination-nav li{
+    gap: 32px;
+    font-size: 16px !important;
+    line-height: normal;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #D0D6F9;
+}
+.destination-nav li:active{
+    color: #ffffff;
+}
+h2{
+    font-family: "Bellefair", serif;
+    font-size: 100px !important;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.destination-info{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.destination-all-info{
+    margin-right: 220px;
+}
+.destination-divider{
+    margin-bottom: 40px;
+    background-color: #ffffff0d;
+}
+.destination-meta p{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 12px !important;
+    color: #D0D6F9;
+    letter-spacing: 2.36px;
+    line-height: normal;
+}
+.destination-meta h5{
+    font-family: "Bellefair", serif;
+    font-size: 28px !important;
 }
