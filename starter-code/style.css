@@ -233,6 +233,7 @@ h4{
     color: #ffffff;
 }
 .technology-image{
-    lefts: 0% !important;
+    width: 608px;
     right: 100%;
+    left: 0%;
 } 
