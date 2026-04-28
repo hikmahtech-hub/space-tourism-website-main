@@ -8,9 +8,17 @@ body.destination{
     background-repeat: no-repeat;
     background-size: cover;
 }
+body.crew{
+    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.technology{
+    background-image: url(assets/technology/background-technology-destop.jpg);
+}
 header{
     font-family: "Barlow Condensed", sans-serif;
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 40px 0 40px 40px;
 }
@@ -94,7 +102,7 @@ h6{
 }
 
 .explore{
-    position: relative; /* sits on top of the ::before */
+    position: relative;
     width: 252px;
     height: 252px;
     background-color: #ffffff;
@@ -165,3 +173,66 @@ h2{
     font-family: "Bellefair", serif;
     font-size: 28px !important;
 }
+.crew-nav{
+    gap: 24px;
+    margin-top: 200px;
+}
+.crew-nav .circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff4d;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+.crew-nav .circle:hover{
+    background-color: #ffffffa6;
+}
+.crew-nav .circle.active{
+    background-color: #ffffff;
+}
+h3{
+    font-family: "Bellefair", serif;
+    font-size: 56px !important;
+    color: #ffffff;
+    margin: 0 0 24px 0;
+}
+h4{
+    font-family: "Bellefair", serif;
+    font-size: 32px !important;
+    color: #ffffff7c;
+    margin: 0 0 24px 0;
+}
+.technology-nav p{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px !important;
+    border-radius: 50%;
+    background: none;
+    border: #ffffff88 1px solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.technology-nav p:active{
+    background-color: #ffffff;
+    color: #0b0d17;
+}
+.technology-info h4{
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+}
+.technology-info h4{
+    font-family: "Bellefair", serif;
+    font-size: 56px;
+    color: #ffffff;
+}
+.technology-image{
+    lefts: 0% !important;
+    right: 100%;
+} 
